@@ -73,3 +73,15 @@ The test will send the data directly to Elasticsearch allowing you to visualise 
 
 ## Conclusion
 In this guide, we have covered the steps to set up and run a k6 load test, track and visualize the results in Kibana. We started by creating an index in Elasticsearch, followed by adding a data view in Kibana, setting up the k6 load test script to track data sent and received, importing the appropriate metric dashboard into Kibana, and finally executing the load test with the xk6-es extension to send the data to Elasticsearch. With these steps, you should now have a complete end-to-end setup for performance testing and monitoring with k6 and Kibana.
+
+
+```bash
+cd C:\Windows\System32
+
+
+$env:K6_ES_INDEX=”k6”
+$env:K6_ELASTICSEARCH_INSECURE_SKIP_VERIFY=true
+$env:K6_ES_ADDRESS=”https://127.0.0.1:9200”
+$env:K6_ES_USERNAME=”elasticadmin”
+$env:K6_ES_PASSWORD=”3lasticadm1n”
+```
